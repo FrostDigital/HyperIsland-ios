@@ -9,17 +9,59 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
+    //MARK: Constants
+    
+    private let colors: [UIColor] = [
+        UIColor.redColor(),
+        UIColor.orangeColor(),
+        UIColor.yellowColor(),
+        UIColor.greenColor(),
+        UIColor.cyanColor(),
+        UIColor.blueColor(),
+        UIColor.purpleColor()
+    ]
+    
+    private let colorNames: [String] = [
+        "Red",
+        "Orange",
+        "Yellow",
+        "Green",
+        "Cyan",
+        "Blue",
+        "Purple"
+    ]
+    
+    //MARK: IBOutlets
+    
+    @IBOutlet weak var changeButtonColor: UIButton!
+    @IBOutlet weak var awesomeView: UIView!
+    @IBOutlet weak var colorLabel: UILabel!
+    
+    //MARK: Properties
+    
+    var colorStepper: Int = 0
+    
+    //MARK: IBActions
+    
+    @IBAction func changeColor(sender: AnyObject?) {
+        let colorIndex = colorStepper % colors.count
+        
+        awesomeView?.backgroundColor = colors[colorIndex]
+        colorLabel?.textColor = colors[colorIndex]
+        colorLabel?.text = colorNames[colorIndex]
+        
+        //increase our stepper
+        colorStepper++
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func randomChangeColor(sender: AnyObject?) {
+        let colorIndex = random() % colors.count
+        
+        awesomeView?.backgroundColor = colors[colorIndex]
+        colorLabel?.textColor = colors[colorIndex]
+        colorLabel?.text = colorNames[colorIndex]
     }
-
 
 }
 

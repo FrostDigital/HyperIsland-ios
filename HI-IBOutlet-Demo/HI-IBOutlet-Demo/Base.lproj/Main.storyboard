@@ -29,6 +29,9 @@
                                 <state key="normal" title="My button">
                                     <color key="titleColor" red="0.36862745099999999" green="0.62352941179999999" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xQM-oP-WS9"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="voF-8C-PZU" userLabel="Minecraft Wrapper">
                                 <rect key="frame" x="24" y="90" width="272" height="272"/>
@@ -107,6 +110,11 @@
                             <constraint firstItem="DgU-if-laf" firstAttribute="trailing" secondItem="voF-8C-PZU" secondAttribute="trailing" id="tPg-Hw-jtc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="awesomeView" destination="voF-8C-PZU" id="nvu-DN-pAZ"/>
+                        <outlet property="changeButtonColor" destination="Khr-LL-SPL" id="s1W-Co-u5i"/>
+                        <outlet property="colorLabel" destination="DgU-if-laf" id="FF5-kZ-qor"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
