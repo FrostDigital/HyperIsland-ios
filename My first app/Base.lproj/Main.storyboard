@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Title-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="My_first_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E7R-F5-V2K">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="UxG-H5-WLt"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Maltes blogg" id="jjb-d1-sOc"/>
+                                </items>
+                            </navigationBar>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mkj-Xz-BDY">
+                                <rect key="frame" x="0.0" y="475" width="320" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem systemItem="favorites" id="rIV-cc-4YZ"/>
+                                    <tabBarItem tag="7" title="Home" image="home" id="Pyl-yT-utQ"/>
+                                    <tabBarItem title="Posts" image="posts" id="tyy-hu-Gif"/>
+                                </items>
+                            </tabBar>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="drn-HG-fVg">
+                                <rect key="frame" x="0.0" y="44" width="320" height="180"/>
+                                <color key="backgroundColor" red="0.9307918848167539" green="0.41594862912626557" blue="0.5408628267742287" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="hSt-KN-eaq">
+                                <rect key="frame" x="46" y="314" width="228" height="25"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Malte circle" translatesAutoresizingMaskIntoConstraints="NO" id="KP5-xW-Ctz">
+                                <rect key="frame" x="93" y="167" width="134" height="128"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9QZ-y1-a1N">
+                                <rect key="frame" x="20" y="347" width="280" height="95"/>
+                                <color key="backgroundColor" red="1" green="0.82223410340000003" blue="0.82777021129999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Hej mina goseknorriga läsare! Det är jag som är det söta marsvinet Malte. På min blogg berättar jag om mitt liv på Kungsholmen. Jag gillar nyckelpigor.&lt;3</string>
+                                <color key="textColor" white="0.35870150862068967" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.82223410344514147" blue="0.82777021128928141" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="E7R-F5-V2K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HAC-1j-TAH"/>
+                            <constraint firstItem="E7R-F5-V2K" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="VnC-x8-MBk"/>
+                            <constraint firstAttribute="trailing" secondItem="E7R-F5-V2K" secondAttribute="trailing" id="bix-Qd-U7p"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Title" id="Pt3-lN-Rwh"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="378"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oAb-QV-s8a">
+            <objects>
+                <viewController id="9wS-Xv-O3f" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IKZ-3S-WZF"/>
+                        <viewControllerLayoutGuide type="bottom" id="HMY-W6-FIL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="A6e-Km-uRc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OBw-mv-Uet">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="kCM-RC-0ZR"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Posts" id="0fa-Qa-qh7"/>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="25 Februari 2016" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zLZ-j9-w7O">
+                                <rect key="frame" x="25" y="292" width="132" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.82223410340000003" blue="0.82777021129999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.2779262414" blue="0.46096262119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gWK-oX-leb">
+                                <rect key="frame" x="0.0" y="519" width="320" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem systemItem="favorites" id="MfF-ST-hLX"/>
+                                    <tabBarItem tag="7" title="Home" image="home" id="RQP-l6-ucJ"/>
+                                    <tabBarItem title="Posts" image="posts" id="Tmn-ck-Vse"/>
+                                </items>
+                            </tabBar>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oks-vW-eIY">
+                                <rect key="frame" x="0.0" y="44" width="320" height="137"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="25 Februari" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="it6-SO-v7T">
+                                        <rect key="frame" x="23" y="108" width="88" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93079188479999997" green="0.41594862910000002" blue="0.54086282679999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="crv-66-y2J">
+                                <rect key="frame" x="20" y="189" width="280" height="267"/>
+                                <color key="backgroundColor" red="1" green="0.82223410340000003" blue="0.82777021129999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Hej bloggisen! Idag har jag ätit meloner och bajsat.Ture har varit ovanligt kittlig. Det räcker att man petar på hans rumpa för att han ska bli alldeles vild. Jag petar på så att han blir distraherad. Då kan jag ju äta morot ifred. Man braid salvia chartreuse slow-carb. Four dollar toast marfa bushwick celiac church-key, kombucha selfies tumblr. Four loko hella letterpress crucifix. Brunch skateboard bespoke, roof party affogato narwhal 90's chartreuse fixie celiac brooklyn etsy kickstarter. VHS tofu biodiesel ugh typewriter, neutra health goth whatever next level portland. </string>
+                                <color key="textColor" white="0.3587015086" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardAppearance="light"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="125 views" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49n-vI-ykb">
+                                <rect key="frame" x="25" y="469" width="63" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.93079188479999997" green="0.41594862910000002" blue="0.54086282679999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="22 stars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Gy-Xs-KOO">
+                                <rect key="frame" x="96" y="469" width="63" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.93079188479999997" green="0.41594862910000002" blue="0.54086282679999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.82223410340000003" blue="0.82777021129999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value=""/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JFK-O4-tr1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="636" y="378"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="1952" height="221"/>
+        <image name="Malte circle" width="3295" height="3295"/>
+        <image name="home" width="26" height="26"/>
+        <image name="posts" width="21" height="25"/>
+    </resources>
+</document>
