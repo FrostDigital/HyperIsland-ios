@@ -36,6 +36,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var changeButtonColor: UIButton!
     @IBOutlet weak var awesomeView: UIView!
+    @IBOutlet weak var CurrentColor: UILabel!
     
     //MARK: Properties
     
@@ -47,6 +48,8 @@ class ViewController: UIViewController {
         let colorIndex = colorStepper % colors.count
         
         awesomeView?.backgroundColor = colors[colorIndex]
+        CurrentColor.textColor = colors [colorIndex]
+        CurrentColor.text = colorNames [colorIndex]
         
         //increase our stepper
         colorStepper++
@@ -56,8 +59,8 @@ class ViewController: UIViewController {
         let colorIndex = random() % colors.count
         
         awesomeView?.backgroundColor = colors[colorIndex]
-        //Test comment
     }
-
+    
+    
+    
 }
-

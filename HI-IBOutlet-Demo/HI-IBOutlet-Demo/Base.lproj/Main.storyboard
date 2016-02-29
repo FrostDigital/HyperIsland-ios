@@ -91,8 +91,8 @@
                                     <constraint firstItem="Bsm-u0-Niz" firstAttribute="height" secondItem="voF-8C-PZU" secondAttribute="height" multiplier="2:3" id="y7f-Dp-cQf"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current color" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DgU-if-laf">
-                                <rect key="frame" x="24" y="386" width="272" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Color " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DgU-if-laf">
+                                <rect key="frame" x="24" y="386" width="272" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -111,6 +111,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="CurrentColor" destination="DgU-if-laf" id="gjk-Lj-He6"/>
                         <outlet property="awesomeView" destination="voF-8C-PZU" id="nvu-DN-pAZ"/>
                         <outlet property="changeButtonColor" destination="Khr-LL-SPL" id="s1W-Co-u5i"/>
                     </connections>
