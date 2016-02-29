@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         "Purple"
     ]
     
-    //MARK: IBOutlets
+    //MARK: IBOutlets    
     
     @IBOutlet weak var changeButtonColor: UIButton!
     @IBOutlet weak var awesomeView: UIView!
