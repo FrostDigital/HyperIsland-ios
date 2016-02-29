@@ -56,6 +56,7 @@ class ViewController: UIViewController {
         let colorIndex = random() % colors.count
         
         awesomeView?.backgroundColor = colors[colorIndex]
+        //comment
     }
 
 }
