@@ -32,14 +32,26 @@ class ViewController: UIViewController {
         "Purple"
     ]
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        currentColor.text = "#000000"
+    }
+    
     //MARK: IBOutlets
     
     @IBOutlet weak var changeButtonColor: UIButton!
     @IBOutlet weak var awesomeView: UIView!
+    @IBOutlet weak var currentColor: UILabel!
+    @IBOutlet weak var redLabel: UILabel!
+    @IBOutlet weak var greenLabel: UILabel!
+    @IBOutlet weak var blueLabel: UILabel!
     
     //MARK: Properties
     
     var colorStepper: Int = 0
+    var red: CGFloat = 255
+    var green: CGFloat = 255
+    var blue: CGFloat = 255
     
     //MARK: IBActions
     
@@ -57,6 +69,49 @@ class ViewController: UIViewController {
         
         awesomeView?.backgroundColor = colors[colorIndex]
     }
+    
+    @IBAction func redSlider(sender: UISlider) {
+        red = CGFloat(sender.value)
+        colorOutput()
+    }
+    
+    @IBAction func greenSlider(sender: UISlider) {
+        green = CGFloat(sender.value)
+        colorOutput()
+    }
+    
+    @IBAction func blueSlider(sender: UISlider) {
+        blue = CGFloat(sender.value)
+        colorOutput()
+    }
+    
+    @IBAction func reset(sender: UIButton) {
+        colorStepper = 0
+        awesomeView?.backgroundColor = UIColor.whiteColor()
+        
+    }
+    
+    //This is the handler for the colors
+    func colorOutput(){
+        
+        //Hexcodes
+        currentColor.text = String(format:"#%02X%02X%02X", Int(red),Int(green),Int(blue))
+        
+        redLabel.text = String(format: "Red: %.0f",red)
+        greenLabel.text = String(format: "Green: %.0f", green)
+        blueLabel.text = String(format: "Blue: %.0f",blue)
+        
+        //Change after printing it to match UIColor
+        let redLocal = red/255
+        let blueLocal = blue/255
+        let greenLocal = green/255
+        
+        let color = UIColor(red: redLocal, green: greenLocal, blue: blueLocal, alpha: 1)
+        awesomeView?.backgroundColor = color
+ 
+        
+    }
+    
 
 }
 
