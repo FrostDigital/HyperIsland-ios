@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     //MARK: Constants
     
     private let colors: [UIColor] = [
+        UIColor.whiteColor(),
         UIColor.redColor(),
         UIColor.orangeColor(),
         UIColor.yellowColor(),
@@ -23,6 +24,7 @@ class ViewController: UIViewController {
     ]
     
     private let colorNames: [String] = [
+        "white",
         "Red",
         "Orange",
         "Yellow",
@@ -37,6 +39,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var changeButtonColor: UIButton!
     @IBOutlet weak var awesomeView: UIView!
     @IBOutlet weak var CurrentColor: UILabel!
+   
     
     //MARK: Properties
     
@@ -55,12 +58,32 @@ class ViewController: UIViewController {
         colorStepper++
     }
     
+
+    @IBAction func ResetButton(sender: UIButton) {
+    awesomeView?.backgroundColor = colors[0]
+    CurrentColor?.text = colorNames [0]
+    CurrentColor?.textColor = colors [0]}
+    
+    
     @IBAction func randomChangeColor(sender: AnyObject?) {
         let colorIndex = random() % colors.count
+
         
         awesomeView?.backgroundColor = colors[colorIndex]
     }
+    @IBOutlet weak var sliderRed: UISlider!
+    @IBOutlet weak var SliderGreen: UISlider!
+    @IBOutlet weak var SliderBlue: UISlider!
     
+    @IBAction func SliderRed(sender: UISlider) {
+        self.view.backgroundColor = UIColor(red: CGFloat(sliderRed.value), green: CGFloat(SliderGreen.value), blue: CGFloat(SliderBlue.value), alpha: 1.0)
+    }
+    @IBAction func SliderGreen(sender: AnyObject) {
+         self.view.backgroundColor = UIColor(red: CGFloat(sliderRed.value), green: CGFloat(SliderGreen.value), blue: CGFloat(SliderBlue.value), alpha: 1.0)
+    }
     
+    @IBAction func SliderBlue(sender: AnyObject) {
+         self.view.backgroundColor = UIColor(red: CGFloat(sliderRed.value), green: CGFloat(SliderGreen.value), blue: CGFloat(SliderBlue.value), alpha: 1.0)
+    }
     
 }

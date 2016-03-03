@@ -37,18 +37,18 @@
                                 <rect key="frame" x="24" y="90" width="272" height="272"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VNN-4F-bFm" userLabel="Top Square">
-                                        <rect key="frame" x="90" y="0.0" width="91" height="90.5"/>
+                                        <rect key="frame" x="90" y="0.0" width="91" height="91"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="VNN-4F-bFm" secondAttribute="height" multiplier="1:1" id="KGp-G3-PmX"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bsm-u0-Niz" userLabel="Left V space">
-                                        <rect key="frame" x="0.0" y="90" width="45.5" height="182"/>
+                                        <rect key="frame" x="0.0" y="90" width="46" height="182"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4TA-M6-BiC" userLabel="Right V space">
-                                        <rect key="frame" x="227" y="90" width="45.5" height="182"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4TA-M6-BiC" userLabel="Right V space">
+                                        <rect key="frame" x="227" y="90" width="46" height="182"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tex-kE-Pzo" userLabel="Left H space">
@@ -97,23 +97,57 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4VY-mw-mjI">
+                                <rect key="frame" x="137" y="434" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7MC-sI-6vm"/>
+                                </constraints>
+                                <state key="normal" title="RESET"/>
+                                <connections>
+                                    <action selector="ResetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Hm-zp-Fa7"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="g2W-UP-xQX">
+                                <rect key="frame" x="101" y="530" width="118" height="31"/>
+                                <connections>
+                                    <action selector="SliderBlue:" destination="BYZ-38-t0r" eventType="valueChanged" id="3gP-rm-oFz"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="UyU-0z-bFq">
+                                <rect key="frame" x="101" y="459" width="118" height="31"/>
+                                <connections>
+                                    <action selector="SliderRed:" destination="BYZ-38-t0r" eventType="valueChanged" id="2fD-m1-A9K"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="b0L-wa-QyG">
+                                <rect key="frame" x="101" y="497" width="118" height="31"/>
+                                <connections>
+                                    <action selector="SliderGreen:" destination="BYZ-38-t0r" eventType="valueChanged" id="ZKS-aK-wYD"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4VY-mw-mjI" secondAttribute="bottom" constant="104" id="5cV-o4-wZR"/>
                             <constraint firstItem="voF-8C-PZU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="24" id="9Tr-Dh-BE1"/>
                             <constraint firstItem="Khr-LL-SPL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="9cX-5l-aNN"/>
+                            <constraint firstItem="4VY-mw-mjI" firstAttribute="top" secondItem="DgU-if-laf" secondAttribute="bottom" constant="27" id="AL9-Wk-gKA"/>
                             <constraint firstAttribute="trailing" secondItem="voF-8C-PZU" secondAttribute="trailing" constant="24" id="Hjf-Tx-oTm"/>
                             <constraint firstItem="DgU-if-laf" firstAttribute="top" secondItem="voF-8C-PZU" secondAttribute="bottom" constant="24" id="Pm6-Nw-3Jr"/>
                             <constraint firstItem="DgU-if-laf" firstAttribute="leading" secondItem="voF-8C-PZU" secondAttribute="leading" id="Qe8-OB-Owy"/>
                             <constraint firstItem="voF-8C-PZU" firstAttribute="top" secondItem="Khr-LL-SPL" secondAttribute="bottom" constant="24" id="eJs-hg-bUa"/>
+                            <constraint firstItem="4VY-mw-mjI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fgj-kU-URU"/>
                             <constraint firstItem="Khr-LL-SPL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o17-LW-Lgx"/>
                             <constraint firstItem="DgU-if-laf" firstAttribute="trailing" secondItem="voF-8C-PZU" secondAttribute="trailing" id="tPg-Hw-jtc"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="CurrentColor" destination="DgU-if-laf" id="gjk-Lj-He6"/>
+                        <outlet property="SliderBlue" destination="g2W-UP-xQX" id="iNG-if-1lg"/>
+                        <outlet property="SliderGreen" destination="b0L-wa-QyG" id="mKS-iq-n72"/>
                         <outlet property="awesomeView" destination="voF-8C-PZU" id="nvu-DN-pAZ"/>
                         <outlet property="changeButtonColor" destination="Khr-LL-SPL" id="s1W-Co-u5i"/>
+                        <outlet property="sliderRed" destination="UyU-0z-bFq" id="Otw-5i-zSe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
