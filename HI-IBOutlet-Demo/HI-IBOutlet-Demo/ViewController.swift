@@ -76,14 +76,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var SliderBlue: UISlider!
     
     @IBAction func SliderRed(sender: UISlider) {
-        self.view.backgroundColor = UIColor(red: CGFloat(sliderRed.value), green: CGFloat(SliderGreen.value), blue: CGFloat(SliderBlue.value), alpha: 1.0)
+        awesomeView.backgroundColor = UIColor(red: CGFloat(sliderRed.value), green: CGFloat(SliderGreen.value), blue: CGFloat(SliderBlue.value), alpha: 1.0)
     }
     @IBAction func SliderGreen(sender: AnyObject) {
-         self.view.backgroundColor = UIColor(red: CGFloat(sliderRed.value), green: CGFloat(SliderGreen.value), blue: CGFloat(SliderBlue.value), alpha: 1.0)
+         awesomeView.backgroundColor = UIColor(red: CGFloat(sliderRed.value), green: CGFloat(SliderGreen.value), blue: CGFloat(SliderBlue.value), alpha: 1.0)
     }
     
     @IBAction func SliderBlue(sender: AnyObject) {
-         self.view.backgroundColor = UIColor(red: CGFloat(sliderRed.value), green: CGFloat(SliderGreen.value), blue: CGFloat(SliderBlue.value), alpha: 1.0)
+         awesomeView.backgroundColor = UIColor(red: CGFloat(sliderRed.value), green: CGFloat(SliderGreen.value), blue: CGFloat(SliderBlue.value), alpha: 1.0)
     }
     
 }
