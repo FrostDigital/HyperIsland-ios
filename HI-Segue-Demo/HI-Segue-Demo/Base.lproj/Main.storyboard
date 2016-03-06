@@ -105,7 +105,7 @@
         <!--Tangerine-->
         <scene sceneID="jg3-as-swf">
             <objects>
-                <viewController id="mLe-JI-pPP" sceneMemberID="viewController">
+                <viewController id="mLe-JI-pPP" customClass="HISimpleViewController" customModule="HI_Segue_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="m4V-Yt-Uzj"/>
                         <viewControllerLayoutGuide type="bottom" id="eio-Hx-RTS"/>
@@ -113,13 +113,51 @@
                     <view key="view" contentMode="scaleToFill" id="nuS-Xi-qhV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KER-u6-ugf">
+                                <rect key="frame" x="86.5" y="84" width="147" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="rgi-GG-gWt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Push Inversed Color">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Grs-1B-Csa" kind="push" identifier="InverseColorSegue" id="BNd-tK-HEt"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="KER-u6-ugf" firstAttribute="centerX" secondItem="nuS-Xi-qhV" secondAttribute="centerX" id="Hzc-xn-2U8"/>
+                            <constraint firstItem="KER-u6-ugf" firstAttribute="top" secondItem="m4V-Yt-Uzj" secondAttribute="bottom" constant="20" id="wxO-F7-NuI"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tangerine" id="5FB-zH-1fF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7AV-CG-XHh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1338" y="-183"/>
+        </scene>
+        <!--Inversed Color-->
+        <scene sceneID="VxT-b3-MRg">
+            <objects>
+                <viewController id="Grs-1B-Csa" customClass="HIColoredViewController" customModule="HI_Segue_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vdr-Zc-iAa"/>
+                        <viewControllerLayoutGuide type="bottom" id="jsW-Ub-h8h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="buq-Di-UgB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Inversed Color" id="9Bh-RH-E7k"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KCz-BA-sKj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1833" y="-183"/>
         </scene>
         <!--Maroon-->
         <scene sceneID="vF6-f2-pPd">
