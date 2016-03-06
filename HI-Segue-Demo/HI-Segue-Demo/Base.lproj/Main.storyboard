@@ -27,6 +27,9 @@
                                 <state key="normal" title="Show Tangerine">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="mLe-JI-pPP" kind="push" id="0Af-87-GFk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJU-1i-bNf">
                                 <rect key="frame" x="20" y="122" width="280" height="30"/>
@@ -35,6 +38,9 @@
                                 <state key="normal" title="Show Maroon">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Gun-3x-yc5" kind="push" id="AXK-2e-iEg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vp-Ta-i7O">
                                 <rect key="frame" x="20" y="160" width="280" height="30"/>
@@ -43,6 +49,9 @@
                                 <state key="normal" title="Show Teal">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="6xu-Sb-rMz" kind="push" id="qV2-yE-l17"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Value" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vhu-un-knA">
                                 <rect key="frame" x="20" y="214" width="280" height="30"/>
@@ -92,6 +101,63 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="832" y="484"/>
+        </scene>
+        <!--Tangerine-->
+        <scene sceneID="jg3-as-swf">
+            <objects>
+                <viewController id="mLe-JI-pPP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m4V-Yt-Uzj"/>
+                        <viewControllerLayoutGuide type="bottom" id="eio-Hx-RTS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nuS-Xi-qhV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tangerine" id="5FB-zH-1fF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7AV-CG-XHh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1338" y="-183"/>
+        </scene>
+        <!--Maroon-->
+        <scene sceneID="vF6-f2-pPd">
+            <objects>
+                <viewController id="Gun-3x-yc5" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Cv-o3-UCe"/>
+                        <viewControllerLayoutGuide type="bottom" id="vhV-1T-Ohc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fk1-6T-mPy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Maroon" id="u6Q-pD-6Xv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0TD-eM-seD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1338" y="484"/>
+        </scene>
+        <!--Teal-->
+        <scene sceneID="1pZ-tn-jYJ">
+            <objects>
+                <viewController id="6xu-Sb-rMz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pEy-Kw-1T1"/>
+                        <viewControllerLayoutGuide type="bottom" id="c4C-VU-BEt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vkd-54-33v">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Teal" id="zpm-cQ-d4r"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dHb-Pv-KWT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1338" y="1165"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cZG-v9-2ZV">
