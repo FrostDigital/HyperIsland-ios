@@ -17,8 +17,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Value" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vhu-un-knA">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJk-u7-eFy">
                                 <rect key="frame" x="20" y="84" width="280" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3xW-dE-azi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Show Tangerine">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJU-1i-bNf">
+                                <rect key="frame" x="20" y="122" width="280" height="30"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Show Maroon">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vp-Ta-i7O">
+                                <rect key="frame" x="20" y="160" width="280" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Show Teal">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Value" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vhu-un-knA">
+                                <rect key="frame" x="20" y="214" width="280" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -26,7 +53,7 @@
                                 </connections>
                             </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jDy-XM-deq">
-                                <rect key="frame" x="20" y="130" width="280" height="29"/>
+                                <rect key="frame" x="20" y="260" width="280" height="29"/>
                                 <segments>
                                     <segment title="Red"/>
                                     <segment title="Green"/>
@@ -37,12 +64,23 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="vhu-un-knA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="2xR-LP-VCY"/>
+                            <constraint firstItem="RJU-1i-bNf" firstAttribute="top" secondItem="sJk-u7-eFy" secondAttribute="bottom" constant="8" id="4aU-4d-u9U"/>
+                            <constraint firstItem="RJU-1i-bNf" firstAttribute="leading" secondItem="sJk-u7-eFy" secondAttribute="leading" id="5Wq-F0-b5N"/>
+                            <constraint firstItem="4vp-Ta-i7O" firstAttribute="top" secondItem="RJU-1i-bNf" secondAttribute="bottom" constant="8" id="5tF-Ns-vWJ"/>
+                            <constraint firstItem="sJk-u7-eFy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="8NT-oJ-Qsb"/>
+                            <constraint firstItem="sJk-u7-eFy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="9sk-iS-Ya7"/>
+                            <constraint firstItem="RJU-1i-bNf" firstAttribute="height" secondItem="sJk-u7-eFy" secondAttribute="height" id="M3l-2n-WTS"/>
+                            <constraint firstItem="vhu-un-knA" firstAttribute="top" secondItem="4vp-Ta-i7O" secondAttribute="bottom" constant="24" id="N2d-5k-ibQ"/>
                             <constraint firstItem="vhu-un-knA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="VVx-mg-rrB"/>
                             <constraint firstItem="jDy-XM-deq" firstAttribute="trailing" secondItem="vhu-un-knA" secondAttribute="trailing" id="csd-tV-d3i"/>
                             <constraint firstItem="jDy-XM-deq" firstAttribute="leading" secondItem="vhu-un-knA" secondAttribute="leading" id="dG2-1D-xxa"/>
                             <constraint firstItem="jDy-XM-deq" firstAttribute="top" secondItem="vhu-un-knA" secondAttribute="bottom" constant="16" id="eBX-Ry-BYT"/>
+                            <constraint firstItem="RJU-1i-bNf" firstAttribute="trailing" secondItem="sJk-u7-eFy" secondAttribute="trailing" id="mRJ-KB-bpe"/>
                             <constraint firstAttribute="trailing" secondItem="vhu-un-knA" secondAttribute="trailing" constant="20" id="pYT-PJ-NlZ"/>
+                            <constraint firstItem="4vp-Ta-i7O" firstAttribute="leading" secondItem="sJk-u7-eFy" secondAttribute="leading" id="qBN-4V-D2b"/>
+                            <constraint firstAttribute="trailing" secondItem="sJk-u7-eFy" secondAttribute="trailing" constant="20" id="tVQ-Y9-aRH"/>
+                            <constraint firstItem="4vp-Ta-i7O" firstAttribute="height" secondItem="sJk-u7-eFy" secondAttribute="height" id="xfR-lM-mfe"/>
+                            <constraint firstItem="4vp-Ta-i7O" firstAttribute="trailing" secondItem="sJk-u7-eFy" secondAttribute="trailing" id="yUy-rb-xnZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Main VC" id="hfd-Bc-BEm"/>
