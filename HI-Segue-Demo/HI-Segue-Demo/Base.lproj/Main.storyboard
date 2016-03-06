@@ -70,6 +70,14 @@
                                 </segments>
                                 <color key="tintColor" red="0.36862745099999999" green="0.62352941179999999" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4yl-IW-Zhc">
+                                <rect key="frame" x="20" y="304" width="280" height="30"/>
+                                <color key="backgroundColor" red="0.36862745099999999" green="0.62352941179999999" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Show Custom">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -81,10 +89,13 @@
                             <constraint firstItem="RJU-1i-bNf" firstAttribute="height" secondItem="sJk-u7-eFy" secondAttribute="height" id="M3l-2n-WTS"/>
                             <constraint firstItem="vhu-un-knA" firstAttribute="top" secondItem="4vp-Ta-i7O" secondAttribute="bottom" constant="24" id="N2d-5k-ibQ"/>
                             <constraint firstItem="vhu-un-knA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="VVx-mg-rrB"/>
+                            <constraint firstItem="4yl-IW-Zhc" firstAttribute="leading" secondItem="jDy-XM-deq" secondAttribute="leading" id="WpQ-q8-X7g"/>
                             <constraint firstItem="jDy-XM-deq" firstAttribute="trailing" secondItem="vhu-un-knA" secondAttribute="trailing" id="csd-tV-d3i"/>
                             <constraint firstItem="jDy-XM-deq" firstAttribute="leading" secondItem="vhu-un-knA" secondAttribute="leading" id="dG2-1D-xxa"/>
+                            <constraint firstItem="4yl-IW-Zhc" firstAttribute="top" secondItem="jDy-XM-deq" secondAttribute="bottom" constant="16" id="dhx-bY-aBh"/>
                             <constraint firstItem="jDy-XM-deq" firstAttribute="top" secondItem="vhu-un-knA" secondAttribute="bottom" constant="16" id="eBX-Ry-BYT"/>
                             <constraint firstItem="RJU-1i-bNf" firstAttribute="trailing" secondItem="sJk-u7-eFy" secondAttribute="trailing" id="mRJ-KB-bpe"/>
+                            <constraint firstItem="4yl-IW-Zhc" firstAttribute="trailing" secondItem="jDy-XM-deq" secondAttribute="trailing" id="pUh-5s-LBT"/>
                             <constraint firstAttribute="trailing" secondItem="vhu-un-knA" secondAttribute="trailing" constant="20" id="pYT-PJ-NlZ"/>
                             <constraint firstItem="4vp-Ta-i7O" firstAttribute="leading" secondItem="sJk-u7-eFy" secondAttribute="leading" id="qBN-4V-D2b"/>
                             <constraint firstAttribute="trailing" secondItem="sJk-u7-eFy" secondAttribute="trailing" constant="20" id="tVQ-Y9-aRH"/>
